@@ -1,5 +1,5 @@
 @if (Session::has('sweet_alert.alert'))
-    <script>
+    <script type="module">
         @if (Session::has('sweet_alert.content'))
             var config = {!! Session::pull('sweet_alert.alert') !!}
             var content = document.createElement('div');
